@@ -10,7 +10,7 @@
   "scripts": {
     "build": "yarn test && tsc && cp -r static/* ./dist",
     "start": "yarn build && cross-env NODE_PATH=./dist nodemon",
-    "release": "yarn build && git subtree push --prefix dist git@github.com:dsedinkin/rgb-to-hex.git release",
+    "release": "yarn build && git subtree push --prefix dist https://github.com/dsedinkin/rgb-to-hex.git release",
     "test": "jest --config jest.config.json"
   },
   "nodemonConfig": {
