@@ -5,5 +5,5 @@ export declare type TRoundRgba = {
     b: number;
     a: number;
 };
-export declare type TRgbaToHexValue = string | Array<number | string>;
+export declare type TRgbaToHexValue = string | Array<number | string> | number | undefined;
 export declare type TRgbaToHex = string | undefined;
