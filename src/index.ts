@@ -23,7 +23,7 @@ export const rgbToHex = (rgba: TRgbaToHexValue, alpha: boolean = false): TRgbaTo
         const { r, g, b, a } = roundRgba(math);
         return "#" + format(r) + format(g) + format(b) + (alpha ? format(a) : "");
     } catch (err) {
-        console.error(err);
+        // console.error(err);
         return undefined;
     }
 };
