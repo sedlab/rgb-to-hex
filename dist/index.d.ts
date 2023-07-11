@@ -1,2 +1,6 @@
-import { TRgbaToHexValue, TRgbaToHex } from "./type";
-export declare const rgbToHex: (rgba: TRgbaToHexValue, alpha?: boolean) => TRgbaToHex;
+type TRgbaToHexValue = string | Array<number | string> | number | undefined;
+type TRgbaToHex = string | undefined;
+
+declare const rgbToHex: (rgba: TRgbaToHexValue, alpha?: boolean) => TRgbaToHex;
+
+export { rgbToHex };

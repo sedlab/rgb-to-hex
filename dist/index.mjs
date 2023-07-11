@@ -1,5 +1,3 @@
-'use strict';
-
 const format = (number) => {
   if (number === -1)
     return "";
@@ -24,4 +22,4 @@ const rgbToHex = (rgba, alpha = false) => {
   }
 };
 
-exports.rgbToHex = rgbToHex;
+export { rgbToHex };
